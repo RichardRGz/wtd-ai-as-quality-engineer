@@ -1,0 +1,18 @@
+### Test Case 1: User Login
+**DETAILS section:**
+- **Summary:** STC01 - As a user, I should be able to login to the platform using valid credentials
+- **Description:** This test case verifies that a user can log in using valid credentials.
+- **Precondition:** The user should be on the login page of the website.
+
+**STEPS section:**
+- **Step Summary:** Navigate to the login page.
+  - **Test Data:** www.saucedemo.com
+  - **Expected Result:** The login page url loads correctly.
+
+- **Step Summary:** Enter valid username and password.
+  - **Test Data:** User: user, Password: password123
+  - **Expected Result:** The username and password fields accept input.
+
+- **Step Summary:** Click on the login button.
+  - **Test Data:** N/A
+  - **Expected Result:** User is logged in successfully and the Products title is displayed.

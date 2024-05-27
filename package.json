@@ -1,0 +1,20 @@
+{
+  "name": "wtd-qa",
+  "version": "1.1.0",
+  "description": "A small project for the usage and learning of AI",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "gen-code": "node src/utils/openai-genCode.js",
+    "gen-files": "node src/utils/openai-genFile.js",
+    "test": "testcafe chrome src/tests"
+  },
+  "keywords": ["npm run"],
+  "author": "rrodriguez",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "openai": "4.47.1",
+    "testcafe": "3.6.0"
+  }
+}

@@ -1,0 +1,36 @@
+It has to do it with the following technologies and dependencies for the automation script:
+- Node.js -  LTS version.
+- JavaScript as main language.
+- Testcafe 3.6.0 as end-to-end testing tool.
+- Dotenv 16.4.5
+
+Also it is essential to follow the following best practices to ensure maintainability, reliability, and efficiency:
+1. Use a Package Manager: Use npm or yarn to manage your dependencies and scripts. Ensure all dependencies are listed in package.json.
+2. Use dotenv environment variables: To manage configurations like base URLs, credentials, and environment-specific settings.
+3. Modularize the code: Break down the test scripts into smaller, reusable functions or modules. This can involve creating helper functions, page objects, and utility modules.
+4. Implement the Page Object Model to separate the test scripts from the page details: This approach makes the tests more maintainable and readable.
+5. Data-Driven Testing: Use data-driven tests to run the same test with different inputs. This can be achieved by parameterizing your tests and using external data sources (e.g., JSON, CSV).
+6. Assertions and Error Handling: Use appropriate assertions to validate the expected outcomes. Handle errors gracefully and use try-catch blocks where necessary to capture and log meaningful errors.
+7. Comments and Documentation: Document your code with meaningful comments and maintain a README file to explain the setup and execution process of your tests.
+8. Consistent Naming Conventions: Follow consistent naming conventions for your test files, functions, and variables.
+9. Test Reports and Logs: Generate detailed test reports and logs. TestCafe supports various reporters (e.g., JSON, HTML) which can be configured to produce comprehensive reports.
+10. Modules import: Always use ES modules and avoid to import commonJS imports.
+
+For TestCafe it required to follow the following practices:
+1. Selectors: Use robust selectors (e.g., data-testid attributes) to identify elements. Avoid brittle selectors that are likely to change frequently, like CSS classes.
+2. Actions and Assertions Separation: Separate actions (like clicking and typing) from assertions. This separation makes your test steps clearer and easier to debug.
+3. Wait Mechanisms: Use TestCafe’s built-in waiting mechanisms and avoid explicit waits where possible. Leverage Selector and await to ensure elements are available before interacting with them.
+4. Always have the variables in the .env file and avoid using them in any other file in addtion that the username variable should be USER_NAME and the password should be USER_PASSWORD.
+5. Never create a "process.env" variable(s) for the LoginPage.js file.
+7. Don't forget to add the import of the dotenv dependecy and use them for the Login.test.js file.
+
+
+Finally the POM structure for this script is should be the following:
+/src
+  |-- /pages
+  |   |-- LoginPage.js
+  |
+  |-- /tests
+  |   |-- Login.test.js
+.env
+package.json

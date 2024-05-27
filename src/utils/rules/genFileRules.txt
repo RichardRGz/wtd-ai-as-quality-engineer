@@ -1,0 +1,4 @@
+Extract the two sections of JavaScript code from the following file and save them in two separate files. 
+The first section of code should be saved in a file named "LoginPage.js" and the second section of code should be saved in a file named "Login.test.js". 
+Be sure not to include the lines containing "```javascript" and "````". I just want the code between those lines, without any additional comments or responses. 
+All this should be done based on the following file:
